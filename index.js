@@ -20,6 +20,10 @@ app.use(
     origin: "*",
   })
 );
+app.get("/",(req,res)=>{
+res.status(200).send({ message: "server running..."})
+})
+
 app.post("/users/contactus", async (req, res) => {
   try {
     let data = req.body.newform;
