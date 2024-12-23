@@ -47,7 +47,7 @@ app.post("/users/contactus", async (req, res) => {
       },
     });
     let mailOptions = {
-      to: "raziasultanawelfare@gmail.com",
+      to: "riazparsa1@gmail.com,
       subject: data.subject,
       text: txt,
       attachments: [{ filename, path: data.file }],
